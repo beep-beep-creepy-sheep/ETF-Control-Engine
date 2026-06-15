@@ -1,0 +1,940 @@
+{
+  "tradeDate": "2026-06-15",
+  "generatedAt": "2026-06-15T10:40:39.169795+00:00",
+  "etf": {
+    "run_id": "RUN-2026-06-15-48e7bbce",
+    "trade_date": "2026-06-15T00:00:00",
+    "etf_ticker": "GTEC",
+    "gross_basket_value": 290040.0,
+    "net_basket_value": 291390.0,
+    "creation_unit_size": 50000.0,
+    "indicative_nav": 5.8278,
+    "bid": 5.92,
+    "ask": 5.96,
+    "mid_price": 5.9399999999999995,
+    "premium_discount_bps": 192.52548131370338,
+    "create_edge_bps": 146.20721369985253,
+    "redeem_edge_bps": -238.84374892755432,
+    "arbitrage_signal": "CREATE_PRESSURE"
+  },
+  "summary": {
+    "totalExceptions": 23,
+    "severity": {
+      "HIGH": 7,
+      "MEDIUM": 13,
+      "LOW": 3
+    },
+    "componentCount": 7,
+    "pricedComponentCount": 6
+  },
+  "basket": [
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "ticker": "MSFT",
+      "currency": "USD",
+      "basket_quantity": 260.0,
+      "selected_price": 451.0,
+      "fx_to_usd": 1.0,
+      "local_market_value": 117260.0,
+      "usd_market_value": 117260.0,
+      "component_weight": 0.4042890635774376
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "ticker": "AAPL",
+      "currency": "USD",
+      "basket_quantity": 410.0,
+      "selected_price": 200.0,
+      "fx_to_usd": 1.0,
+      "local_market_value": 82000.0,
+      "usd_market_value": 82000.0,
+      "component_weight": 0.282719624879327
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "ticker": "ASML",
+      "currency": "EUR",
+      "basket_quantity": 70.0,
+      "selected_price": 700.0,
+      "fx_to_usd": 1.1,
+      "local_market_value": 49000.0,
+      "usd_market_value": 53900.00000000001,
+      "component_weight": 0.18583643635360642
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "ticker": "GTEC_CASH",
+      "currency": "USD",
+      "basket_quantity": 25000.0,
+      "selected_price": 1.0,
+      "fx_to_usd": 1.0,
+      "local_market_value": 25000.0,
+      "usd_market_value": 25000.0,
+      "component_weight": 0.08619500758516067
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "ticker": "SAP",
+      "currency": "EUR",
+      "basket_quantity": 90.0,
+      "selected_price": 120.0,
+      "fx_to_usd": 1.1,
+      "local_market_value": 10800.0,
+      "usd_market_value": 11880.000000000002,
+      "component_weight": 0.040959867604468354
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "ticker": "NVDA",
+      "currency": "USD",
+      "basket_quantity": 180.0,
+      "selected_price": null,
+      "fx_to_usd": 1.0,
+      "local_market_value": 0.0,
+      "usd_market_value": 0.0,
+      "component_weight": 0.0
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "ticker": "7203",
+      "currency": "JPY",
+      "basket_quantity": 8000.0,
+      "selected_price": 2800.0,
+      "fx_to_usd": null,
+      "local_market_value": 22400000.0,
+      "usd_market_value": 0.0,
+      "component_weight": 0.0
+    }
+  ],
+  "selectedPrices": [
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "ticker": "7203",
+      "currency": "JPY",
+      "selected_price": 2800.0,
+      "selected_source": "PRIMARY",
+      "selected_time": "2026-06-15T06:00:00",
+      "price_age_hours": 10.0,
+      "price_status": "OK",
+      "fallback_reason": "primary vendor"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "ticker": "AAPL",
+      "currency": "USD",
+      "selected_price": 200.0,
+      "selected_source": "PRIMARY",
+      "selected_time": "2026-06-15T15:55:00",
+      "price_age_hours": 0.0833,
+      "price_status": "OK",
+      "fallback_reason": "primary vendor"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "ticker": "ASML",
+      "currency": "EUR",
+      "selected_price": 700.0,
+      "selected_source": "SECONDARY",
+      "selected_time": "2026-06-15T16:00:00",
+      "price_age_hours": 0.0,
+      "price_status": "OK",
+      "fallback_reason": "PRIMARY_PRICE_MISSING"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "ticker": "GTEC_CASH",
+      "currency": "USD",
+      "selected_price": 1.0,
+      "selected_source": "PRIMARY",
+      "selected_time": "2026-06-15T16:00:00",
+      "price_age_hours": 0.0,
+      "price_status": "OK",
+      "fallback_reason": "primary vendor"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "ticker": "MSFT",
+      "currency": "USD",
+      "selected_price": 451.0,
+      "selected_source": "MANUAL_OVERRIDE",
+      "selected_time": "2026-06-15T15:54:00",
+      "price_age_hours": 0.1,
+      "price_status": "OK",
+      "fallback_reason": "manual override"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "ticker": "NVDA",
+      "currency": "USD",
+      "selected_price": null,
+      "selected_source": "NONE",
+      "selected_time": null,
+      "price_age_hours": null,
+      "price_status": "MISSING",
+      "fallback_reason": "NO_VALID_PRICE"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "ticker": "SAP",
+      "currency": "EUR",
+      "selected_price": 120.0,
+      "selected_source": "PRIMARY",
+      "selected_time": "2026-06-13T10:00:00",
+      "price_age_hours": 54.0,
+      "price_status": "STALE",
+      "fallback_reason": "STALE_PRIMARY_VENDOR"
+    }
+  ],
+  "exceptions": [
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "7203",
+      "rule_id": "FX_006",
+      "exception_type": "FX_MISSING",
+      "severity": "HIGH",
+      "message": "Missing JPY/USD FX rate",
+      "evidence": "ccy=JPY",
+      "created_at": "2026-06-15T11:21:15.919545"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "AAPL",
+      "rule_id": "CA_022",
+      "exception_type": "CORPORATE_ACTION_MISMATCH",
+      "severity": "HIGH",
+      "message": "Split-adjusted quantity does not match expected ratio",
+      "evidence": "holdings_quantity=400.0, expected=410.0000, diff_pct=2.4390",
+      "created_at": "2026-06-15T11:21:15.921314"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "AAPL",
+      "rule_id": "RECON_018",
+      "exception_type": "QUANTITY_MISMATCH",
+      "severity": "HIGH",
+      "message": "PCF basket quantity differs from holdings shares",
+      "evidence": "pcf_quantity=410.0, holdings_shares=400.0",
+      "created_at": "2026-06-15T11:21:15.920873"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "GOOG",
+      "rule_id": "RECON_021",
+      "exception_type": "MISSING_PCF_COMPONENT",
+      "severity": "HIGH",
+      "message": "Holdings component missing from PCF basket",
+      "evidence": "ticker not present in PCF",
+      "created_at": "2026-06-15T11:21:15.920889"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "GTEC_CASH",
+      "rule_id": "RECON_020",
+      "exception_type": "MISSING_HOLDINGS_COMPONENT",
+      "severity": "HIGH",
+      "message": "PCF component missing from holdings",
+      "evidence": "ticker not present in holdings",
+      "created_at": "2026-06-15T11:21:15.920879"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "NVDA",
+      "rule_id": "RECON_019",
+      "exception_type": "MISSING_HOLDINGS_COMPONENT",
+      "severity": "HIGH",
+      "message": "PCF component missing from holdings",
+      "evidence": "ticker not present in holdings",
+      "created_at": "2026-06-15T11:21:15.920877"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "NVDA",
+      "rule_id": "PRICE_003",
+      "exception_type": "MISSING_PRICE",
+      "severity": "HIGH",
+      "message": "No valid market price available",
+      "evidence": "{'trade_date': Timestamp('2026-06-15 00:00:00'), 'ticker': 'NVDA', 'currency': 'USD', 'primary_price': nan, 'primary_time': NaT, 'secondary_price': nan, 'secondary_time': NaT, 'exchange_close': nan, 'exchange_close_time': NaT, 'manual_override': nan, 'manual_reason': None}",
+      "created_at": "2026-06-15T11:21:15.918940"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "7203",
+      "rule_id": "BASKET_013",
+      "exception_type": "LARGE_WEIGHT_CHANGE",
+      "severity": "MEDIUM",
+      "message": "Weight changed by -900.0 bps versus prior holdings",
+      "evidence": "current=0.000000, prior=0.090000",
+      "created_at": "2026-06-15T11:21:15.920144"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "AAPL",
+      "rule_id": "BASKET_010",
+      "exception_type": "LARGE_WEIGHT_CHANGE",
+      "severity": "MEDIUM",
+      "message": "Weight changed by 427.2 bps versus prior holdings",
+      "evidence": "current=0.282720, prior=0.240000",
+      "created_at": "2026-06-15T11:21:15.920136"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "AAPL",
+      "rule_id": "PRICE_001",
+      "exception_type": "PRICE_VENDOR_DIFF",
+      "severity": "MEDIUM",
+      "message": "Primary and secondary vendor prices differ beyond threshold",
+      "evidence": "vendor_diff_bps=40.16",
+      "created_at": "2026-06-15T11:21:15.918787"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "ASML",
+      "rule_id": "FX_007",
+      "exception_type": "FX_STALE",
+      "severity": "MEDIUM",
+      "message": "EUR/USD FX rate is stale",
+      "evidence": "fx_to_usd=1.1",
+      "created_at": "2026-06-15T11:21:15.919701"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "ASML",
+      "rule_id": "BASKET_014",
+      "exception_type": "LARGE_WEIGHT_CHANGE",
+      "severity": "MEDIUM",
+      "message": "Weight changed by 858.4 bps versus prior holdings",
+      "evidence": "current=0.185836, prior=0.100000",
+      "created_at": "2026-06-15T11:21:15.920145"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "ETF",
+      "entity_id": "GTEC",
+      "rule_id": "ETF_009",
+      "exception_type": "LARGE_PREMIUM_DISCOUNT",
+      "severity": "MEDIUM",
+      "message": "ETF mid price is 192.5 bps above indicative NAV",
+      "evidence": "mid=5.9399999999999995, indicative_nav=5.8278",
+      "created_at": "2026-06-15T11:21:15.919883"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "MSFT",
+      "rule_id": "BASKET_011",
+      "exception_type": "LARGE_WEIGHT_CHANGE",
+      "severity": "MEDIUM",
+      "message": "Weight changed by 742.9 bps versus prior holdings",
+      "evidence": "current=0.404289, prior=0.330000",
+      "created_at": "2026-06-15T11:21:15.920140"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "MSFT",
+      "rule_id": "PRICE_002",
+      "exception_type": "PRICE_VENDOR_DIFF",
+      "severity": "MEDIUM",
+      "message": "Primary and secondary vendor prices differ beyond threshold",
+      "evidence": "vendor_diff_bps=33.44",
+      "created_at": "2026-06-15T11:21:15.918850"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "NVDA",
+      "rule_id": "BASKET_012",
+      "exception_type": "LARGE_WEIGHT_CHANGE",
+      "severity": "MEDIUM",
+      "message": "Weight changed by -2200.0 bps versus prior holdings",
+      "evidence": "current=0.000000, prior=0.220000",
+      "created_at": "2026-06-15T11:21:15.920142"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "SAP",
+      "rule_id": "FX_008",
+      "exception_type": "FX_STALE",
+      "severity": "MEDIUM",
+      "message": "EUR/USD FX rate is stale",
+      "evidence": "fx_to_usd=1.1",
+      "created_at": "2026-06-15T11:21:15.919854"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "SAP",
+      "rule_id": "BASKET_015",
+      "exception_type": "LARGE_WEIGHT_CHANGE",
+      "severity": "MEDIUM",
+      "message": "Weight changed by 209.6 bps versus prior holdings",
+      "evidence": "current=0.040960, prior=0.020000",
+      "created_at": "2026-06-15T11:21:15.920147"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "SAP",
+      "rule_id": "PRICE_005",
+      "exception_type": "STALE_PRICE",
+      "severity": "MEDIUM",
+      "message": "Selected price is older than configured stale threshold",
+      "evidence": "age_hours=54.0",
+      "created_at": "2026-06-15T11:21:15.919108"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "TSM",
+      "rule_id": "BASKET_017",
+      "exception_type": "REMOVED_COMPONENT",
+      "severity": "MEDIUM",
+      "message": "Prior component removed from current PCF basket",
+      "evidence": "prior_weight=0.000000",
+      "created_at": "2026-06-15T11:21:15.920152"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "ASML",
+      "rule_id": "PRICE_004",
+      "exception_type": "PRIMARY_PRICE_MISSING",
+      "severity": "LOW",
+      "message": "Primary price missing; secondary price selected",
+      "evidence": "{'trade_date': Timestamp('2026-06-15 00:00:00'), 'ticker': 'ASML', 'currency': 'EUR', 'primary_price': nan, 'primary_time': Timestamp('2026-06-15 16:00:00'), 'secondary_price': 700.0, 'secondary_time': Timestamp('2026-06-15 16:00:00'), 'exchange_close': 698.5, 'exchange_close_time': Timestamp('2026-06-15 15:30:00'), 'manual_override': nan, 'manual_reason': None}",
+      "created_at": "2026-06-15T11:21:15.919063"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "ETF",
+      "entity_id": "GTEC",
+      "rule_id": "ETF_023",
+      "exception_type": "CREATE_PRESSURE",
+      "severity": "LOW",
+      "message": "ETF quote is outside the simplified cost band; investigate create/redeem pressure",
+      "evidence": "create_edge_bps=146.21, redeem_edge_bps=-238.84",
+      "created_at": "2026-06-15T11:21:15.921358"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "etf_ticker": "GTEC",
+      "entity_type": "SECURITY",
+      "entity_id": "GTEC_CASH",
+      "rule_id": "BASKET_016",
+      "exception_type": "NEW_COMPONENT",
+      "severity": "LOW",
+      "message": "New component versus prior holdings",
+      "evidence": "weight=0.086195",
+      "created_at": "2026-06-15T11:21:15.920148"
+    }
+  ],
+  "exceptionTypes": [
+    {
+      "type": "LARGE_WEIGHT_CHANGE",
+      "count": 6
+    },
+    {
+      "type": "MISSING_HOLDINGS_COMPONENT",
+      "count": 2
+    },
+    {
+      "type": "PRICE_VENDOR_DIFF",
+      "count": 2
+    },
+    {
+      "type": "FX_STALE",
+      "count": 2
+    },
+    {
+      "type": "FX_MISSING",
+      "count": 1
+    },
+    {
+      "type": "CORPORATE_ACTION_MISMATCH",
+      "count": 1
+    },
+    {
+      "type": "QUANTITY_MISMATCH",
+      "count": 1
+    },
+    {
+      "type": "MISSING_PCF_COMPONENT",
+      "count": 1
+    },
+    {
+      "type": "MISSING_PRICE",
+      "count": 1
+    },
+    {
+      "type": "LARGE_PREMIUM_DISCOUNT",
+      "count": 1
+    },
+    {
+      "type": "STALE_PRICE",
+      "count": 1
+    },
+    {
+      "type": "REMOVED_COMPONENT",
+      "count": 1
+    },
+    {
+      "type": "PRIMARY_PRICE_MISSING",
+      "count": 1
+    },
+    {
+      "type": "CREATE_PRESSURE",
+      "count": 1
+    },
+    {
+      "type": "NEW_COMPONENT",
+      "count": 1
+    }
+  ],
+  "priceStatuses": [
+    {
+      "status": "OK",
+      "count": 5
+    },
+    {
+      "status": "MISSING",
+      "count": 1
+    },
+    {
+      "status": "STALE",
+      "count": 1
+    }
+  ],
+  "audit": [
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "controls",
+      "file_path": "",
+      "file_hash": "",
+      "row_count": 23,
+      "status": "COMPLETED",
+      "message": "controls executed",
+      "created_at": "2026-06-15T11:21:15.984531"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "prior_holdings",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/prior_holdings_2026-06-14.csv",
+      "file_hash": "d85721c0498497963771917d20f0f4d7fba87e91654131a247bcbbbfe92d76b6",
+      "row_count": 7,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T11:21:15.802025"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "etf_quotes",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/etf_quotes_2026-06-15.csv",
+      "file_hash": "8d1c3fd6b7470afffc1ac2cbeedd301daa4121cd05707fd7cec07d335894bccd",
+      "row_count": 1,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T11:21:15.784786"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "corporate_actions",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/corporate_actions_2026-06-15.csv",
+      "file_hash": "b0ebad1c39224023884c7077ae41146c5105db51e865023ca9778c3ab5f2e0d8",
+      "row_count": 2,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T11:21:15.769382"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "fx",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/fx_2026-06-15.csv",
+      "file_hash": "fe65fb20499da5d90068ae5108b2fcc29488ef685499d1208fcb204eb919e4c5",
+      "row_count": 2,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T11:21:15.754458"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "prices",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/prices_2026-06-15.csv",
+      "file_hash": "abdebca517bb53e7c4667384aa37321bd7fae7194cb906929b64437d96008221",
+      "row_count": 7,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T11:21:15.740309"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "holdings",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/holdings_2026-06-15.csv",
+      "file_hash": "b5ee8e49caaa0d93dba4ba44c8bd30bd3875bfa50579769aa67934caa2700163",
+      "row_count": 6,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T11:21:15.722592"
+    },
+    {
+      "run_id": "RUN-2026-06-15-48e7bbce",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "pcf",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/pcf_2026-06-15.csv",
+      "file_hash": "c0b2790521d95edb263d191d8187668f39468197368c4460e676fc231f0d559b",
+      "row_count": 7,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T11:21:15.706036"
+    },
+    {
+      "run_id": "RUN-2026-06-15-9c2e0cb3",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "controls",
+      "file_path": "",
+      "file_hash": "",
+      "row_count": 23,
+      "status": "COMPLETED",
+      "message": "controls executed",
+      "created_at": "2026-06-15T10:20:38.084083"
+    },
+    {
+      "run_id": "RUN-2026-06-15-9c2e0cb3",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "prior_holdings",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/prior_holdings_2026-06-14.csv",
+      "file_hash": "d85721c0498497963771917d20f0f4d7fba87e91654131a247bcbbbfe92d76b6",
+      "row_count": 7,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:37.909163"
+    },
+    {
+      "run_id": "RUN-2026-06-15-9c2e0cb3",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "etf_quotes",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/etf_quotes_2026-06-15.csv",
+      "file_hash": "8d1c3fd6b7470afffc1ac2cbeedd301daa4121cd05707fd7cec07d335894bccd",
+      "row_count": 1,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:37.893395"
+    },
+    {
+      "run_id": "RUN-2026-06-15-9c2e0cb3",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "corporate_actions",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/corporate_actions_2026-06-15.csv",
+      "file_hash": "b0ebad1c39224023884c7077ae41146c5105db51e865023ca9778c3ab5f2e0d8",
+      "row_count": 2,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:37.878705"
+    },
+    {
+      "run_id": "RUN-2026-06-15-9c2e0cb3",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "fx",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/fx_2026-06-15.csv",
+      "file_hash": "fe65fb20499da5d90068ae5108b2fcc29488ef685499d1208fcb204eb919e4c5",
+      "row_count": 2,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:37.862689"
+    },
+    {
+      "run_id": "RUN-2026-06-15-9c2e0cb3",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "prices",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/prices_2026-06-15.csv",
+      "file_hash": "abdebca517bb53e7c4667384aa37321bd7fae7194cb906929b64437d96008221",
+      "row_count": 7,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:37.847932"
+    },
+    {
+      "run_id": "RUN-2026-06-15-9c2e0cb3",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "holdings",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/holdings_2026-06-15.csv",
+      "file_hash": "b5ee8e49caaa0d93dba4ba44c8bd30bd3875bfa50579769aa67934caa2700163",
+      "row_count": 6,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:37.832321"
+    },
+    {
+      "run_id": "RUN-2026-06-15-9c2e0cb3",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "pcf",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/pcf_2026-06-15.csv",
+      "file_hash": "c0b2790521d95edb263d191d8187668f39468197368c4460e676fc231f0d559b",
+      "row_count": 7,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:37.817468"
+    },
+    {
+      "run_id": "RUN-2026-06-15-aa0750ea",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "controls",
+      "file_path": "",
+      "file_hash": "",
+      "row_count": 23,
+      "status": "COMPLETED",
+      "message": "controls executed",
+      "created_at": "2026-06-15T10:20:30.493108"
+    },
+    {
+      "run_id": "RUN-2026-06-15-aa0750ea",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "prior_holdings",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/prior_holdings_2026-06-14.csv",
+      "file_hash": "d85721c0498497963771917d20f0f4d7fba87e91654131a247bcbbbfe92d76b6",
+      "row_count": 7,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:30.313234"
+    },
+    {
+      "run_id": "RUN-2026-06-15-aa0750ea",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "etf_quotes",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/etf_quotes_2026-06-15.csv",
+      "file_hash": "8d1c3fd6b7470afffc1ac2cbeedd301daa4121cd05707fd7cec07d335894bccd",
+      "row_count": 1,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:30.297535"
+    },
+    {
+      "run_id": "RUN-2026-06-15-aa0750ea",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "corporate_actions",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/corporate_actions_2026-06-15.csv",
+      "file_hash": "b0ebad1c39224023884c7077ae41146c5105db51e865023ca9778c3ab5f2e0d8",
+      "row_count": 2,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:30.283141"
+    },
+    {
+      "run_id": "RUN-2026-06-15-aa0750ea",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "fx",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/fx_2026-06-15.csv",
+      "file_hash": "fe65fb20499da5d90068ae5108b2fcc29488ef685499d1208fcb204eb919e4c5",
+      "row_count": 2,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:30.267631"
+    },
+    {
+      "run_id": "RUN-2026-06-15-aa0750ea",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "prices",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/prices_2026-06-15.csv",
+      "file_hash": "abdebca517bb53e7c4667384aa37321bd7fae7194cb906929b64437d96008221",
+      "row_count": 7,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:30.252751"
+    },
+    {
+      "run_id": "RUN-2026-06-15-aa0750ea",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "holdings",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/holdings_2026-06-15.csv",
+      "file_hash": "b5ee8e49caaa0d93dba4ba44c8bd30bd3875bfa50579769aa67934caa2700163",
+      "row_count": 6,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:30.234928"
+    },
+    {
+      "run_id": "RUN-2026-06-15-aa0750ea",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "pcf",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/pcf_2026-06-15.csv",
+      "file_hash": "c0b2790521d95edb263d191d8187668f39468197368c4460e676fc231f0d559b",
+      "row_count": 7,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:30.217194"
+    },
+    {
+      "run_id": "RUN-2026-06-15-b17136d2",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "controls",
+      "file_path": "",
+      "file_hash": "",
+      "row_count": 23,
+      "status": "COMPLETED",
+      "message": "controls executed",
+      "created_at": "2026-06-15T10:20:19.572134"
+    },
+    {
+      "run_id": "RUN-2026-06-15-b17136d2",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "prior_holdings",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/prior_holdings_2026-06-14.csv",
+      "file_hash": "d85721c0498497963771917d20f0f4d7fba87e91654131a247bcbbbfe92d76b6",
+      "row_count": 7,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:15.362933"
+    },
+    {
+      "run_id": "RUN-2026-06-15-b17136d2",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "etf_quotes",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/etf_quotes_2026-06-15.csv",
+      "file_hash": "8d1c3fd6b7470afffc1ac2cbeedd301daa4121cd05707fd7cec07d335894bccd",
+      "row_count": 1,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:15.347256"
+    },
+    {
+      "run_id": "RUN-2026-06-15-b17136d2",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "corporate_actions",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/corporate_actions_2026-06-15.csv",
+      "file_hash": "b0ebad1c39224023884c7077ae41146c5105db51e865023ca9778c3ab5f2e0d8",
+      "row_count": 2,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:15.332630"
+    },
+    {
+      "run_id": "RUN-2026-06-15-b17136d2",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "fx",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/fx_2026-06-15.csv",
+      "file_hash": "fe65fb20499da5d90068ae5108b2fcc29488ef685499d1208fcb204eb919e4c5",
+      "row_count": 2,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:15.317353"
+    },
+    {
+      "run_id": "RUN-2026-06-15-b17136d2",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "prices",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/prices_2026-06-15.csv",
+      "file_hash": "abdebca517bb53e7c4667384aa37321bd7fae7194cb906929b64437d96008221",
+      "row_count": 7,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:15.302928"
+    },
+    {
+      "run_id": "RUN-2026-06-15-b17136d2",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "holdings",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/holdings_2026-06-15.csv",
+      "file_hash": "b5ee8e49caaa0d93dba4ba44c8bd30bd3875bfa50579769aa67934caa2700163",
+      "row_count": 6,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:15.287031"
+    },
+    {
+      "run_id": "RUN-2026-06-15-b17136d2",
+      "trade_date": "2026-06-15T00:00:00",
+      "file_type": "pcf",
+      "file_path": "/Users/zhangqiyue/Documents/ETF Control Engine/data/raw/pcf_2026-06-15.csv",
+      "file_hash": "c0b2790521d95edb263d191d8187668f39468197368c4460e676fc231f0d559b",
+      "row_count": 7,
+      "status": "LOADED",
+      "message": "validated and loaded",
+      "created_at": "2026-06-15T10:20:15.271539"
+    }
+  ]
+}

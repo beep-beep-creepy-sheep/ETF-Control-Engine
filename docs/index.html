@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GTEC ETF Basket Control Dashboard</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Synthetic ETF Operations Control</p>
+      <h1>GTEC Basket Control Dashboard</h1>
+    </div>
+    <div class="run-context">
+      <span id="tradeDate">Trade date</span>
+      <span id="generatedAt">Generated</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-grid">
+      <article class="panel nav-panel">
+        <div class="panel-label">Indicative NAV</div>
+        <div class="nav-value" id="indicativeNav">--</div>
+        <div class="metric-row">
+          <span>ETF Mid</span>
+          <strong id="midPrice">--</strong>
+        </div>
+        <div class="metric-row">
+          <span>Premium / Discount</span>
+          <strong id="premiumDiscount">--</strong>
+        </div>
+        <div class="band" id="arbSignal">--</div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-label">Exception Load</div>
+        <div class="exception-total" id="totalExceptions">--</div>
+        <div class="severity-stack">
+          <div><span class="dot high"></span>High <strong id="highCount">0</strong></div>
+          <div><span class="dot medium"></span>Medium <strong id="mediumCount">0</strong></div>
+          <div><span class="dot low"></span>Low <strong id="lowCount">0</strong></div>
+        </div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-label">Create / Redeem Band</div>
+        <div class="metric-row">
+          <span>Create Edge</span>
+          <strong id="createEdge">--</strong>
+        </div>
+        <div class="metric-row">
+          <span>Redeem Edge</span>
+          <strong id="redeemEdge">--</strong>
+        </div>
+        <p class="note">Signal is a control indicator, not a guaranteed arbitrage opportunity.</p>
+      </article>
+
+      <article class="panel">
+        <div class="panel-label">Coverage</div>
+        <div class="metric-row">
+          <span>Components</span>
+          <strong id="componentCount">--</strong>
+        </div>
+        <div class="metric-row">
+          <span>Priced</span>
+          <strong id="pricedCount">--</strong>
+        </div>
+        <div class="metric-row">
+          <span>Gross Basket</span>
+          <strong id="grossValue">--</strong>
+        </div>
+      </article>
+    </section>
+
+    <section class="workspace">
+      <aside class="sidebar">
+        <div class="section-heading">
+          <h2>Controls</h2>
+          <span id="visibleCount">0 shown</span>
+        </div>
+        <label class="filter-label" for="severityFilter">Severity</label>
+        <select id="severityFilter">
+          <option value="ALL">All severities</option>
+          <option value="HIGH">High</option>
+          <option value="MEDIUM">Medium</option>
+          <option value="LOW">Low</option>
+        </select>
+        <label class="filter-label" for="typeFilter">Exception type</label>
+        <select id="typeFilter">
+          <option value="ALL">All exception types</option>
+        </select>
+        <label class="filter-label" for="searchBox">Search</label>
+        <input id="searchBox" type="search" placeholder="Ticker, rule, message">
+        <div class="type-list" id="exceptionTypeList"></div>
+      </aside>
+
+      <section class="content">
+        <div class="section-heading">
+          <h2>Exception Queue</h2>
+          <span>Sorted by severity</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Severity</th>
+                <th>Rule</th>
+                <th>Entity</th>
+                <th>Type</th>
+                <th>Message</th>
+              </tr>
+            </thead>
+            <tbody id="exceptionRows"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <section class="lower-grid">
+      <article class="panel">
+        <div class="section-heading">
+          <h2>Basket Weights</h2>
+          <span>USD market value weight</span>
+        </div>
+        <div id="basketBars" class="bars"></div>
+      </article>
+
+      <article class="panel">
+        <div class="section-heading">
+          <h2>Price Waterfall</h2>
+          <span>Selected source and status</span>
+        </div>
+        <div class="table-wrap compact">
+          <table>
+            <thead>
+              <tr>
+                <th>Ticker</th>
+                <th>Source</th>
+                <th>Price</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="priceRows"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel audit-panel">
+      <div class="section-heading">
+        <h2>Run Audit</h2>
+        <span>Latest records</span>
+      </div>
+      <div class="audit-list" id="auditList"></div>
+    </section>
+  </main>
+
+  <template id="emptyState">
+    <tr>
+      <td colspan="5" class="empty">No exceptions match the current filters.</td>
+    </tr>
+  </template>
+
+  <script src="./app.js"></script>
+</body>
+</html>
+

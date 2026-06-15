@@ -4,6 +4,20 @@
 
 The project uses only synthetic data. It does not connect to Bloomberg, Refinitiv, JPM, Virtu, DTCC, NSCC, exchanges, or any live market data provider. It is a realistic simulation of ETF operations controls, not a production trading system, and it does not use Streamlit.
 
+## Dashboard Preview
+
+The interactive dashboard can be hosted directly from the repository with GitHub Pages. The README can show a static preview image, while the live dashboard runs as plain HTML, CSS, and JavaScript from the `docs/` folder.
+
+![GTEC ETF Basket Control Dashboard preview](docs/dashboard-preview.svg)
+
+Live dashboard URL after GitHub Pages is enabled:
+
+```text
+https://<your-github-username>.github.io/etf-basket-control-engine/
+```
+
+No local deployment is required for viewers once the repository is pushed to GitHub and Pages is enabled.
+
 ## Business Context
 
 ETF operations teams review daily Portfolio Composition Files (PCFs), holdings, market prices, FX rates, ETF quotes, and corporate action files to make sure create/redeem baskets are valued correctly and operational breaks are escalated. Small data issues can distort indicative NAV, premium/discount analysis, cash balancing, or create/redeem decisions.
@@ -152,6 +166,28 @@ Or run the full pipeline:
 etfctl run-all --date 2026-06-15 --db storage/etf_control.duckdb --output reports/
 ```
 
+Generate the static browser dashboard data:
+
+```bash
+etfctl dashboard --date 2026-06-15 --db storage/etf_control.duckdb --output web/public/data
+```
+
+For a GitHub Pages-ready dashboard, write the same static snapshot to `docs/data`:
+
+```bash
+etfctl dashboard --date 2026-06-15 --db storage/etf_control.duckdb --output docs/data
+```
+
+The repository includes `.github/workflows/pages.yml`, which publishes the static `docs/` dashboard to GitHub Pages on pushes to `main`. Viewers can open the Pages URL directly and do not need Python, DuckDB, Streamlit, Node, or a local server.
+
+Optional local preview:
+
+```bash
+python -m http.server 8000 --directory web/public
+```
+
+Open `http://localhost:8000` to view the user-friendly control dashboard. The frontend is plain HTML, CSS, and JavaScript; it does not use Streamlit or require a Node build step.
+
 Module execution is also supported:
 
 ```bash
@@ -164,6 +200,8 @@ Expected generated files:
 storage/etf_control.duckdb
 reports/ETF_Exception_Report_2026-06-15.xlsx
 reports/ETF_Exception_Report_2026-06-15.html
+web/public/data/dashboard_2026-06-15.json
+docs/data/dashboard_2026-06-15.json
 ```
 
 Generated databases and reports are ignored by git except for `.gitkeep` placeholders.
@@ -206,4 +244,3 @@ Built a Python-based ETF basket control engine simulating institutional create/r
 Developed a DuckDB-backed ETF operations control pipeline that validates synthetic PCF, holdings, market price, FX, and corporate action files; detects stale pricing inputs, basket drift, and reconciliation breaks; and generates daily Excel and HTML exception reports.
 
 Implemented configurable ETF pricing controls using Python, DuckDB, Typer, Pydantic, and pytest, with rule-driven exception severity, run-level audit trails, and automated validation tests.
-

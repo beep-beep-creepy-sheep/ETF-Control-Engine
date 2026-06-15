@@ -1,0 +1,7 @@
+rule_id,entity_type,entity_id,exception_type,severity,message
+PRICE_001,SECURITY,NVDA,MISSING_PRICE,HIGH,No valid market price available
+PRICE_002,SECURITY,SAP,STALE_PRICE,MEDIUM,Selected price is older than configured stale threshold
+FX_001,SECURITY,7203,FX_MISSING,HIGH,Missing JPY/USD FX rate
+ETF_001,ETF,GTEC,LARGE_PREMIUM_DISCOUNT,MEDIUM,ETF mid price exceeds configured premium/discount threshold
+BASKET_001,SECURITY,AAPL,LARGE_WEIGHT_CHANGE,MEDIUM,Current basket weight moved beyond configured threshold
+CA_001,SECURITY,AAPL,CORPORATE_ACTION_MISMATCH,HIGH,Split-adjusted holding quantity does not match expected ratio

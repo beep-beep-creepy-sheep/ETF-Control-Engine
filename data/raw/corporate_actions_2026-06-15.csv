@@ -1,0 +1,4 @@
+effective_date,ticker,action_type,ratio_old,ratio_new,cash_amount,currency
+2026-06-15,AAPL,SPLIT,1,2,0,USD
+2026-06-15,SAP,DIVIDEND,1,1,1.25,EUR
+

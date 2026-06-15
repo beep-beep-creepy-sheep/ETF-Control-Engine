@@ -1,0 +1,4 @@
+trade_date,ccy,fx_to_usd,source,last_update_time
+2026-06-15,USD,1.0000,internal,2026-06-15 16:00:00
+2026-06-15,EUR,1.1000,vendor_a,2026-06-14 08:00:00
+

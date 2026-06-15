@@ -1,0 +1,43 @@
+pricing:
+  stale_price_hours:
+    US: 24
+    JP: 36
+    EU: 30
+    DEFAULT: 24
+  price_vendor_diff_bps: 20
+
+fx:
+  stale_fx_hours: 24
+
+thresholds:
+  large_premium_discount_bps: 50
+  basket_drift_bps: 25
+  quantity_tolerance_pct: 0.5
+
+arbitrage:
+  create_cost_bps: 12
+  redeem_cost_bps: 12
+  min_edge_bps: 5
+
+severity:
+  MISSING_PRICE: HIGH
+  STALE_PRICE: MEDIUM
+  PRIMARY_PRICE_MISSING: LOW
+  PRICE_VENDOR_DIFF: MEDIUM
+  FX_MISSING: HIGH
+  FX_STALE: MEDIUM
+  CURRENCY_MISMATCH: HIGH
+  LARGE_PREMIUM_DISCOUNT: MEDIUM
+  LARGE_WEIGHT_CHANGE: MEDIUM
+  NEW_COMPONENT: LOW
+  REMOVED_COMPONENT: MEDIUM
+  MISSING_PCF_COMPONENT: HIGH
+  MISSING_HOLDINGS_COMPONENT: HIGH
+  QUANTITY_MISMATCH: HIGH
+  IDENTIFIER_MISMATCH: HIGH
+  CORPORATE_ACTION_MISMATCH: HIGH
+  DIVIDEND_CASH_COMPONENT_CHECK: MEDIUM
+  CREATE_PRESSURE: LOW
+  REDEEM_PRESSURE: LOW
+  WITHIN_COST_BAND: LOW
+

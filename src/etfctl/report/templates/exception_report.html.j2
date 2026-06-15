@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ETF Exception Report {{ trade_date }}</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #1f2937; }
+    h1 { margin-bottom: 4px; }
+    .subtle { color: #6b7280; }
+    .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0; }
+    .card { border: 1px solid #d1d5db; border-radius: 8px; padding: 14px; }
+    .value { font-size: 22px; font-weight: bold; }
+    table { border-collapse: collapse; width: 100%; margin: 18px 0 32px; }
+    th, td { border: 1px solid #d1d5db; padding: 8px; text-align: left; font-size: 13px; }
+    th { background: #eef2f7; }
+    .HIGH { color: #b91c1c; font-weight: bold; }
+    .MEDIUM { color: #92400e; font-weight: bold; }
+    .LOW { color: #1d4ed8; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>GTEC ETF Basket Control Exception Report</h1>
+  <div class="subtle">Synthetic portfolio simulation. Trade date: {{ trade_date }}</div>
+
+  <div class="cards">
+    <div class="card"><div>Indicative NAV</div><div class="value">{{ "%.4f"|format(etf.indicative_nav) }}</div></div>
+    <div class="card"><div>Premium / Discount</div><div class="value">{{ "%.1f"|format(etf.premium_discount_bps) }} bps</div></div>
+    <div class="card"><div>Arbitrage Band Signal</div><div class="value">{{ etf.arbitrage_signal }}</div></div>
+    <div class="card"><div>Total Exceptions</div><div class="value">{{ exception_count }}</div></div>
+  </div>
+
+  <h2>ETF Valuation</h2>
+  <table>
+    <tr><th>Bid</th><th>Ask</th><th>Mid</th><th>Gross Basket Value</th><th>Net Basket Value</th><th>Create Edge</th><th>Redeem Edge</th></tr>
+    <tr>
+      <td>{{ "%.4f"|format(etf.bid) }}</td>
+      <td>{{ "%.4f"|format(etf.ask) }}</td>
+      <td>{{ "%.4f"|format(etf.mid_price) }}</td>
+      <td>{{ "%.2f"|format(etf.gross_basket_value) }}</td>
+      <td>{{ "%.2f"|format(etf.net_basket_value) }}</td>
+      <td>{{ "%.1f"|format(etf.create_edge_bps) }} bps</td>
+      <td>{{ "%.1f"|format(etf.redeem_edge_bps) }} bps</td>
+    </tr>
+  </table>
+
+  <h2>Exception Summary</h2>
+  <p>High: {{ high_count }} | Medium: {{ medium_count }} | Low: {{ low_count }}</p>
+  <table>
+    <tr><th>Severity</th><th>Rule</th><th>Entity</th><th>Type</th><th>Message</th><th>Evidence</th></tr>
+    {% for item in exceptions %}
+    <tr>
+      <td class="{{ item.severity }}">{{ item.severity }}</td>
+      <td>{{ item.rule_id }}</td>
+      <td>{{ item.entity_id }}</td>
+      <td>{{ item.exception_type }}</td>
+      <td>{{ item.message }}</td>
+      <td>{{ item.evidence }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  <h2>Run Audit</h2>
+  <table>
+    <tr><th>Run ID</th><th>File Type</th><th>Rows</th><th>Status</th><th>Created At</th></tr>
+    {% for item in audit %}
+    <tr><td>{{ item.run_id }}</td><td>{{ item.file_type }}</td><td>{{ item.row_count }}</td><td>{{ item.status }}</td><td>{{ item.created_at }}</td></tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
+

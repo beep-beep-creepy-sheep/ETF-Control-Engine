@@ -10,10 +10,10 @@ The interactive dashboard can be hosted directly from the repository with GitHub
 
 ![GTEC ETF Basket Control Dashboard preview](docs/dashboard-preview.svg)
 
-Live dashboard URL after GitHub Pages is enabled:
+Live dashboard URL:
 
 ```text
-https://<your-github-username>.github.io/etf-basket-control-engine/
+https://beep-beep-creepy-sheep.github.io/etf-basket-control-engine/
 ```
 
 No local deployment is required for viewers once the repository is pushed to GitHub and Pages is enabled.
